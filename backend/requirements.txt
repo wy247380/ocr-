@@ -1,0 +1,32 @@
+# ============================================================
+# Patent Verify Agent V2 — 依赖清单
+# 兼容 Windows 7 (Python 3.8.10) 和 Windows 10+
+# ============================================================
+
+# Web 框架
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# 数据库
+sqlalchemy==2.0.35
+
+# 文件处理
+pillow==10.4.0
+pymupdf==1.24.10
+python-multipart==0.0.9
+requests==2.32.3
+
+# OCR — EasyOCR + PyTorch 1.12.1 CPU-only
+easyocr==1.7.1
+opencv-python-headless==4.9.0.80
+torch==1.12.1+cpu
+torchvision==0.13.1+cpu
+
+# 浏览器自动化
+playwright==1.47.0
+
+# PDF 签章（参考用）
+pyhanko==0.25.1
+
+# 打包（仅打包环境需要）
+pyinstaller>=6.0.0
